@@ -1,0 +1,364 @@
+body{
+	background: linear-gradient(-45deg, #FFF3E2, #FFE5CA, #FA9884, #E74646);
+	background-size: 400% 400%;
+	animation: gradient 18s ease infinite;
+	height: 100vh;
+    text-align: center
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5%;
+    padding: 5% 10%;
+    border-radius: 2%;
+    background: #FFF3E2;
+    box-shadow:2px 1px 20px #797575;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeIn 1s ease-in-out 1;
+}
+
+.container div{
+    margin: 2%;
+}
+
+.heading-content
+{
+    font-family: 'Bungee Shade', cursive;
+}
+
+.outer-back{
+    border: 3px #000 solid;
+    padding: 1%;   
+    margin: 0;
+}
+
+/* .heading-content{
+    background: linear-gradient(20deg, #d73c3c, #cb4c4c);
+    color: #fff;
+    margin: 0;
+} */
+
+span.rotate{
+    display: block;
+    animation: spin-span 3s ease-in-out infinite ;
+    letter-spacing: 1.2;
+    line-height: 2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub-heading span
+{
+    font-size: 2rem;
+}
+
+.btn--start
+{
+    margin: 5%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #E74646;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.8% 2%;
+    transition: all 0.4s;
+    border: 0;
+    cursor: pointer;
+    border-radius: 8%;
+}
+
+.categories
+{
+    display: flex;
+    text-align: center;
+}
+
+.input--check{
+    display: inline-block;
+    text-align: center;
+}
+
+.input--check:checked
+{
+    content: '\2713';
+    color: #000;
+}
+
+#level
+{
+    font-family: 'Poppins', sans-serif;
+    background-color: #E74646;
+    color: #FFF3E2;
+    transition: all 0.3s;
+    box-shadow: 0 0.5em 0.5em -0.4em;
+}
+
+.blur
+{
+    filter: blur(5px);
+}
+/* ---------Hover Effects ---------- */
+
+.btn--start:hover
+{
+    background-color: #FFF3E2 ;
+    border: 1px #E74646 solid;
+    color: #E74646;
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5em 0.5em -0.4em #E74646;
+}
+
+
+/* -------ANIMATIONS------- */
+
+@keyframes fadeIn {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes spin-span {
+    0%{
+        transform: rotate(360deg);
+        color: #E74646;
+    }
+
+    75%{
+        transform: rotate(-360deg);
+        color: #FA9884;
+    }
+
+    100%{
+        transform: rotate(0deg);
+        color: #ef16aa;
+    }
+
+}
+
+/* Part-2 */
+.game--container
+{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5%;
+    padding: 8% 10%;
+    border-radius: 2%;
+    background: #FFF3E2;
+    box-shadow:2px 1px 20px #797575;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeIn 1s ease-in-out 1;
+}
+
+
+.timer--parent
+{
+    padding: 2%;
+    text-align: center;
+}
+
+.timer h1{
+    animation: blur-animate 1s ease-in-out 60 ;
+}
+
+
+.timer
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    padding: 2%;
+    border: 2px solid #000;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    /* animation: blur-animate 1s ease-in-out 60 ; */
+    transition: all 0.3s;
+    border-width: 120%;
+}
+
+.options{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.options--arr{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.option
+{
+    margin: 3% 0;
+    text-align: left;
+    padding: 2% 3%;
+}
+
+.btn--submit
+{
+    margin: 5%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #E74646;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.8% 2%;
+    transition: all 0.4s;
+    border: 0;
+    cursor: pointer;
+    border-radius: 8%;
+}
+
+.btn--submit:hover
+{
+    background-color: #FFF3E2 ;
+    border: 1px #E74646 solid;
+    color: #E74646;
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5em 0.5em -0.4em #E74646;
+}
+
+h3{
+    font-weight: lighter;
+}
+
+
+@keyframes border-animate {
+
+    
+}
+
+@keyframes blur-animate {
+
+    0%{
+        filter: blur(0px);
+    }
+
+    25%{
+        filter: blur(2px);
+    }
+
+    50%{
+        filter: blur(4px);
+    }
+
+    75%{
+        filter: blur(2px);
+    }
+
+    100%{
+        filter: blur(0px);
+    }
+    
+}
+
+
+/* ----------------MODAL-------------- */
+.modal {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7rem;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    filter: blur(0);
+    
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    border-radius: 2%;
+    animation: fadeIn 1s ease-in-out 1;
+    background-color: #fefefe;
+    margin: 1.5% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+.correct{
+    margin: 1%;
+    border-radius: 5%;
+    padding: 2%;
+    background: radial-gradient(rgb(17, 199, 17), rgb(58, 190, 58), rgb(72, 208, 72));
+    color: #fff;
+    animation: opacity-animate 2s ease-in-out 1 ;
+}
+
+.wrong{
+    margin: 1%;
+    border-radius: 5%;
+    padding: 2%;
+    background: radial-gradient(#f00000, #e13434, #db5050);
+    color: #fff;
+    animation: opacity-animate 2s ease-in-out 1 ;
+
+}
+
+.analysis--container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+
+@keyframes opacity-animate{
+
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+    
+}
+
+.btn--retry{
+    margin: 5%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #E74646;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.8% 2%;
+    transition: all 0.4s;
+    border: 0;
+    cursor: pointer;
+    border-radius: 8%;
+}
+
+.btn--retry:hover{
+    background-color: #FFF ;
+    border: 1px #E74646 solid;
+    color: #E74646;
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5em 0.5em -0.4em #E74646;
+}

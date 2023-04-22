@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-O-Tron</title>
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class = "container">
+        <div class = "outer-back">
+            <div class = "heading">
+                <h1 class = "heading-content">QUIZ <span class = "rotate"> -o- </span> TRON</h1>
+            </div>
+        </div>
+
+        <div class = 'sub-heading'>
+            <span> Welcome </span> <br> <br>
+             This is Quiz-o-Tron,
+             <br>
+             A free for all trivia application with multiple categories.
+             <br>
+             
+             Answer a series of 10 questions within the time limit & lead the Leaderboard!
+        </div>
+
+        <div class = 'btn--div'>
+            <button class = 'btn--start'> S T A R T</button>
+        </div>
+
+        <div class = 'categories'>
+
+            <label class = 'categories--label input--check'>
+                <input class = "input--check" type = "checkbox" id = "--science" name = "science-chk" value = "science"> 
+                <br>
+                <label for="--science">Science</label><br>
+            </label>
+
+            <label class = 'categories--label'>
+                <input class = "input--check" type="checkbox" id = "--film--tv" name = "Film & TV" value="film_and_tv"> 
+                <br>
+                <label for="film--tv">Film & TV</label><br>
+            </label>
+
+            <label class = 'categories--label'>
+                <input class = "input--check" type="checkbox" id="--music" name="music" value="music">
+                <br>
+                <label for="--music">Music</label><br>
+            </label>
+
+            <label class = 'categories--label'>
+                <input class = "input--check" type="checkbox" id="--arts--literature" name="Arts & Literature" value="arts_and_literature">
+                <br>
+                <label for="vehicle1">Arts & Literature</label><br>
+            </label>
+
+            <label class = 'categories--label'>
+                <input class = "input--check" type="checkbox" id="--geography" name="geography" value="geography">
+                <br>
+                <label for="--geography">Geography</label><br>
+            </label>
+
+            <label class = 'categories--label'>
+                <input class = "input--check" type="checkbox" id="--general--knowledge" name="general_knowledge" value="general_knowledge">
+                <br>
+                <label for="vehicle1">General Knowledge</label><br>
+            </label>
+
+            <label class = 'categories--label'>
+                <input class = "input--check" type="checkbox" id="--history" name="history" value="history">
+                <label for="vehicle1">History</label><br>
+            </label>
+        
+        </div>
+
+        <div class = 'difficulty--lvl'>
+            <br>
+            <label for="cars">Choose a difficulty:</label> <br>
+
+            <select name="level" id="level">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+        </div>
+        
+    </div>
+    
+</body>
+
+<script src="index.js"></script>
+</html>
